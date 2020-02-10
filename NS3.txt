@@ -1,0 +1,105 @@
+NS3-Q1
+1)Rename name of project to "FIRST"
+2)comment out till int main
+3)change protocoll to UDP
+4)comment out cmd.Addvalue
+5)nodes.create(3)
+6)make datarate "500Mbps"
+7)make delay 1ms
+8)comment out setQueue
+9)make nodes->nodes.get(0),nodes.get(1)
+10)comment out till ipv4addressHelper
+11)Before //flow add-> a)devices=pointtopoint......(See and write)
+12)Replace nodes.Get(0) with 2
+13) comment out setDefault
+14)Change datarate to 500Mbps
+15)change 0 to 1 ->GetAddress
+16)change 1 to 0 ->Add
+17)After simulator::Run();add monitor->checkforLostPAckets();
+18)add-> flowmonito::flowstate
+for(std::map.... see and write all the nslog...
+19)comment out everything except 
+Simulation::Destroy(); return 0; }
+
+*************************************************************************
+
+NS3-Q2
+1)Rename program to "SECOND"
+2)comment out till int main
+3)change protocol to udp
+4)comment out addvalue
+5)make nodes.create(4)
+6)make data rate "5Mbps"
+7)make delay "1ms"
+8)comment out setQueue
+9)add the 3lines &rearrange base, devices, interfaces
+ipv4addresshelper address; ......also do the same fr tcp.. see and write
+10)change sockettype to ns3::udpSocketFactory
+3,1,2
+11)comment out default
+12)replace simulation +0.1 with 5.0
+13)copy the entire thing->port1=9
+change all to 1 
+3,0,2
+change sockettype to ns3:tcpsocketfactory
+14)comment out 2 lines
+15)add monitor->checkforlostpackets();
+16)same for loop as First
+17)comment out
+18)comment out
+
+**************************************************************************
+
+NS3-Q3
+1)add #include "ns3/flow-monitor-module.h"
+2)till address.assign(apdevices);
+3)copy paste from port=7
+4)replace socketype->ns3::udpsocketfactory
+5)replace nodes.get(0) with csmanodes.get(ncsma)
+6)replace 0.1 with 10
+7)comment out default value
+8)replace interfaces with csmainterfaces 0 with ncsma
+9)replace nodes.get(1) with wifistanode.get(nwifi -1)
+10)replace simulation time with 10.1
+11)comment out till ipv4
+12)add monitor->checkforlostpackets()
+13)same for loop
+14)simulator::Destroy()
+15)return 0;
+
+**************************************************************************
+
+NS3-Q4
+1)remove both void function before int main()
+2)in int main remove packersize and number packets and verbose values
+3)remove the cmd.add value
+4)romove the convert to time object
+5)create 5 nodes instead of2
+6)dont include wifi enabling components()
+7)mobilityHelper for list positional allocation
+Mobility.setPositionalAllocation("ns3::Gr...see and write)
+8)Add IPv4 GlobalRoutingHelper::PopulateRoutinTable();
+9)packet sink helper=ns3::UdpSocketFactory
+10)(InetSocketAddress(i.GetAddress(3),port)));
+apps.AddConoff.Install(c.get(0));
+11)Add visualization using Netanim 
+AnimationInterface anim("ex4.xml");
+12)//print per flow status
+Add the throughput 
+Ns_log_uncond("throughput....see and write)
+
+****************************************************************************
+NS3-Q5
+1)delete the static void sink Rx and pint Rtt functions
+2)in int main include a variable Time interPacketInterrval=Seconds(1-0);
+3)replace LOG_info->NS_LOG_UNCOND
+4)create 6 nodes
+5)Connect all nodes to shared channel using cmaHelper csma and csma install(c);
+6)add ip stack to all nodes NS_LOG_UNCOND("add ip stack"); ipstack.Install(c);
+7)Assign IP address   ip.Assign(device);
+8)Create source.   InetSocketAddred dst ..... (seee and write)
+9)create sink.	packetSinkHelper sink..... (see and write
+10)Create pingers.. ping.setAttribute .... (See and write)
+11)Flow monitor calculate the throuhput
+throughput=.... (see and write)
+timeLastRxPackets.Getsecond....(See and write) 

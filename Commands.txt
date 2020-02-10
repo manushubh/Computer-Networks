@@ -1,0 +1,38 @@
+
+  485  cd Desktop/rushi/
+  486  ls
+  487  clear
+  488  ls
+  489  clear
+  490  clear
+  491  ls
+  492  cd ns-allinone-3.29
+  493  clear
+  494  ls
+  495  ./build.py 
+  496  ls
+  497  ./build.py --enable-examples --enable-tests
+  498  ls
+  499  cd ..
+  500  ls
+  501  cd Desktop/rushi/ns-allinone-3.26
+  502  ./build.py --enable-examples --enable-tests
+  503  cd ns-3.26/
+  504  ls
+  505  clear
+  506  ./waf --run scratch/traffic-control
+  507  ./waf --run scratch/traffic-control
+  508  ./waf --run scratch/traffic-control
+  509  ./waf --run scratch/traffic-control
+  510  ./waf --run scratch/traffic-control
+  511  ./waf --run scratch/traffic-control
+  512  ./waf --run scratch/traffic-control
+  513  ./waf --run scratch/traffic-control
+  514  ./waf --run scratch/traffic-control
+  515  ./waf --run scratch/traffic-control
+  516  ./waf --run scratch/traffic-control
+  517  ./waf --run scratch/traffic-control
+  518  ./waf --run scratch/traffic-control
+  519  ./waf --run scratch/traffic-control
+  520  history
+  521  history > commands.txt

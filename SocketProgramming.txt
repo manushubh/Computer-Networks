@@ -1,0 +1,8 @@
+Commands for execution:-
+
+Open two terminals one for client and server each.
+Change directory to the file location in both the terminals.
+Run gcc server.c -o serv.out in the server terminal.
+If no errors, run ./serv.out
+Run gcc client.c -o client.out in the client terminal.
+If no errors, run ./client.out

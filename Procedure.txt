@@ -1,0 +1,31 @@
+NS3
+First program:- 
+changes are all within the same file. (traffic-control)
+One line from second.cc present under examples/tutorials.
+
+Second program:- 
+do the first program entirely. 
+Refer examples/wireless/power-adaption-interface.cc 
+copy the for loop and make necessary changes.
+
+Third program:- 
+refer third.cc in examples/tutorials. 
+Add flow-monitor-module header
+Copy same for loop as second from examples/wireless/power-adaption-interface.cc
+Copy UDP flow from traffic-control.cc
+In UDP flow, sinkapp->csmaNodes.get(nCsma)
+apps.Add -> wifiStaNodes.Get(nWifi-1)
+remoteAddress -> csmaInterfaces.GetAddress(nCsma)
+
+Fourth program:- 
+first go to examples/wireless/wifi-simple-adhoc.cc and add 3 header files which are on lines 61-63 in completed code.
+Take mobility functions from third.cc
+Copy flow again from traffic-control.cc
+Copy same for loop from power-adaption upto throughput line.
+
+Fifth program:-
+use file src/csma/examples/csma-ping
+add Time interPacket...... Line from wifi-simple-adhoc.cc
+Change number of nodes to 6.
+Add onoff functions from traffic-control.cc which is at lines 92-95 in completed code.
+Again add for loop at the end like in question 4.
